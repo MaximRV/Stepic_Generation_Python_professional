@@ -6,5 +6,5 @@ def delete (number_list:list):
     pass
 def edit():
     pass
-def change():
+def change(elem: tuple):
     pass
