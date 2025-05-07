@@ -1,0 +1,15 @@
+a = (1,2,3)
+b= ("a","b","c")
+c={"a":1, "b":2,"c":3}
+d=(el for el in b)
+def delete (number_list:list):
+    pass
+def edit():
+    pass
+def change(elem: tuple):
+    pass
+
+a = (1,2,3)
+b= ("a","b","c")
+c={"a":1, "b":2,"c":3}
+d=(el for el in b)
