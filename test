@@ -11,5 +11,3 @@ def change(elem: tuple):
 
 a = (1,2,3)
 b= ("a","b","c")
-c={"a":1, "b":2,"c":3}
-d=(el for el in b)
