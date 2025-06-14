@@ -9,5 +9,3 @@ def edit():
 def change(elem: tuple):
     pass
 
-a = (1,2,3)
-b= ("a","b","c")
