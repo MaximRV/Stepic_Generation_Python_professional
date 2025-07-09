@@ -5,3 +5,20 @@ b= ("a","b","c")
 a = (1,2,3)
 b= ("a","b","c")
 
+class SuperInt(int):
+    def repeat(self,n:int=2):
+        return SuperInt(str(self) + str(abs(self)) *(n - 1))
+
+    def to_bin(self):
+        if self >=0:
+            return bin(self)[2:]
+        return str(self)[0]  + bin(self)[3:]
+
+    def next(self):
+        return SuperInt(self + 1)
+
+    def prev(self):
+        return SuperInt(self - 1)
+
+    def __iter__(self):
+        return (SuperInt(i) for i in str(abs(self)))
