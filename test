@@ -8,10 +8,10 @@ class SuperInt(int):
         return str(self)[0]  + bin(self)[3:]
 
     def next(self):
-        return SuperInt(self + 1)
+        return SuperInt(self + 2)
 
     def prev(self):
-        return SuperInt(self - 1)
+        return SuperInt(self - 2)
 
     def __iter__(self):
         return (SuperInt(i) for i in str(abs(self)))
