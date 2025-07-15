@@ -11,7 +11,7 @@ class SuperInt(int):
         return SuperInt(self + 2)
 
     def prev(self):
-        return SuperInt(self - 2)
+        return SuperInt(self - 3)
 
     def __iter__(self):
         return (SuperInt(i) for i in str(abs(self)))
