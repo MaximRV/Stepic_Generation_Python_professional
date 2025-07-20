@@ -17,3 +17,19 @@ def hash_function(obj):
     hash = (total1 * total2) % 123456791
     
     return hash
+
+class DevelopmentTeam():
+    def __init__(self):
+        self.junior = []
+        self.senior = []
+
+    def add_junior(self, *args):
+        self.junior.extend([(elem,'junior') for elem in args])
+
+    def add_senior(self, *args):
+        self.senior.extend([(elem,'senior') for elem in args])
+
+
+    def __iter__(self):
+        return (elem for elem in self.junior + self.senior)
+
