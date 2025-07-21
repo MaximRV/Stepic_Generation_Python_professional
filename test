@@ -29,7 +29,3 @@ class DevelopmentTeam():
     def add_senior(self, *args):
         self.senior.extend([(elem,'senior') for elem in args])
 
-
-    def __iter__(self):
-        return (elem for elem in self.junior + self.senior)
-
