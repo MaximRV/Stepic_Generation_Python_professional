@@ -40,19 +40,7 @@ def hash_function(obj):
     
     return hash
 
-def limited_hash(left, right, hash_function=hash):
-    range_size = right - left + 1
 
-    def hash_func(obj):
-        obj_hash = hash_function(obj)
-
-        if left <= obj_hash <= right:
-            return obj_hash
-
-        offset = (obj_hash - left) % range_size
-        return left + offset
-
-    return hash_func
 
 
 
