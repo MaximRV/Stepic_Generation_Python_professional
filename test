@@ -21,16 +21,7 @@ class Vector:
     def __complex__(self):
         return complex(self.x,self.y)
 
-class ContextManager:
-    def __enter__(self):
-        print('Вызов метода __enter__()')
-    
-    def __exit__(self, exc_type, exc_value, traceback):
-        print('Вызов метода __exit__()')
 
-
-with ContextManager() as manager:
-    print(manager)
 
 
 
