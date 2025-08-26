@@ -2,20 +2,6 @@
 
 
 
-try:
-    with ContextManager():
-        print('Выполнение блока with')
-except ValueError:
-    print('Исключение обработано')
-
-class ContextManager:
-    def __enter__(self):
-        print('Вызов метода __enter__()')
-    
-    def __exit__(self, exc_type, exc_value, traceback):
-        print('Вызов метода __exit__()')
-        raise ValueError
-
 
 try:
     with ContextManager():
