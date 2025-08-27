@@ -53,21 +53,4 @@ class ContextManager:
         return False
 
 
-with ContextManager() as manager:
-    print(manager)
-    print(manager[10])
-    print('bee')
-print('geek')
-
-class SuppressAll:
-    def __enter__(self):
-        return self
-
-    def __exit__(self, exc_type):
-        return False
-
-
-
-
-
 
