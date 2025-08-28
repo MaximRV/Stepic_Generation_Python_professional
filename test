@@ -36,21 +36,6 @@ class ContextManager:
         return False
 
 
-try:
-    with ContextManager():
-        print('Выполнение блока with')
-        raise ValueError
-except ValueError:
-    print('Исключение обработано')
-
-class ContextManager:
-    def __enter__(self):
-        return 'beegeek'
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        if isinstance(exc_value, IndexError):
-            return True
-        return False
 
 
 
