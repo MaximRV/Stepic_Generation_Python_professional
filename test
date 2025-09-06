@@ -22,30 +22,6 @@ class ForgivingIndexer:
     def __len__(self):
         return len(self.sequence)
 
-
-words = ForgivingIndexer(['beegeek', 'pygen', 'stepik', 'python'])
-
-print(len(words[1.9]))
-
-def __getitem__(self, key):
-    pass
-
-                  
-def __setitem__(self):
-    pass
-
-                  
-def __getitem__(self, key, value):
-    pass
-
-                  
-def __setitem__(self, key, value):
-    pass
-
-                  
-def __setitem__(self, key):
-    pass
-
                   
 def __getitem__(self):
     pass
