@@ -11,3 +11,12 @@ class ForgivingIndexer:
     
     def __len__(self):
         return len(self.sequence)
+
+from contextlib import contextmanager
+
+@contextmanager
+def context_manager():
+    return 'ContextManager'
+    
+with context_manager() as manager:
+    print(manager)
