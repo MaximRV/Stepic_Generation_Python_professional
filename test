@@ -20,3 +20,12 @@ def context_manager():
     
 with context_manager() as manager:
     print(manager)
+
+@contextmanager
+def context_manager():
+    print('Вход в блок with')
+    yield
+    print('Выход из блока with')
+    
+with context_manager() as manager:
+    print(manager)
