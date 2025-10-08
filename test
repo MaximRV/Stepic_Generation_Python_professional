@@ -39,15 +39,3 @@ with context_manager() as manager:
 
 from contextlib import contextmanager
 
-@contextmanager
-def context_manager():
-    try:
-        yield 'ContextManager'
-    except IndexError:
-        print('Исключение IndexError обработано')
-    
-try:
-    with context_manager() as manager:
-        print(manager + 1)
-except TypeError:
-    print('Исключение TypeError обработано')
