@@ -33,9 +33,5 @@ def context_manager():
     except IndexError:
         print('Исключение IndexError обработано')
     
-with context_manager() as manager:
-    print(manager[100])
 
-
-from contextlib import contextmanager
 
