@@ -14,17 +14,7 @@ with context_manager() as manager:
 
 from contextlib import contextmanager
 
-@contextmanager
-def context_manager():
-    num = 2077
-    yield lambda: num
-    num += 1
-    
-with context_manager() as manager:
-    print(manager())
-print(manager())
 
-from contextlib import contextmanager
 
 
     
