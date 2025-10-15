@@ -12,7 +12,7 @@ def context_manager():
 with context_manager() as manager:
     print(manager)
 
-from contextlib import contextmanager
+
 
 
 
