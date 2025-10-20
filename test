@@ -14,7 +14,20 @@ with context_manager() as manager:
 
 
 
+def NumCount(n):
+    count = 0
+    def recurs(number):
+        nonlocal count
+        if number:
+            count += 1
+            if len(str(number)) == 1:
+                return None
+            else:
+                recurs(int(str(number)[:-1]))
 
+    recurs(n)
+    return count
+print(NumCount(int(input())))
 
     
 
