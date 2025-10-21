@@ -3,16 +3,6 @@
 
 
 
-from contextlib import contextmanager
-
-@contextmanager
-def context_manager():
-    return 'ContextManager'
-    
-with context_manager() as manager:
-    print(manager)
-
-
 
 def NumCount(n):
     count = 0
